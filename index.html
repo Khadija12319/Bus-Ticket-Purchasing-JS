@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,8 +10,197 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        .font1{
+            font-family: "Inter", sans-serif;
+        }
+        .font2{
+            font-family: "Raleway", sans-serif;
+        }
+        .right-yellow{
+            background-image: linear-gradient(rgb(255, 255, 255) 45%, rgb(255 191 15) 0%);
+            background-position: left;
+            background-size: 2px 15px;
+            background-repeat: repeat-y;
+            position: relative;
+        }
+        .right-pink{
+            background-image: linear-gradient(rgb(255, 255, 255) 45%, rgba(247, 140, 156, 1) 0%);
+            background-position: left;
+            background-size: 2px 15px;
+            background-repeat: repeat-y;
+            position: relative;
+        }
+        .circle{
+            width : 48px;
+            height: 48px;
+            border-radius: 50%;
+            background: white;
+        }
+        .circles{
+           position: absolute; 
+           width: fit-content;
+           height: 250px;     
+           top: 50%;
+           transform: translate(0, -50%);
+           left: 318px;
+           display: flex;
+           align-items: center;
+           justify-content: space-between;
+           flex-direction: column;
+        }
+    </style>
 </head>
 <body>
-    
+    <header>
+        <!--nav bar-->
+        <section class="container mx-auto pt-[48px] pb-[30px]">
+            <div class="flex md:justify-between gap-5 md:flex-row flex-col justify-center">
+                <h1 class="text-[#030712] text-4xl font-extrabold font2 text-center md:text-left">P-Ticket</h1>
+                <div class="flex-1">
+                    <ul class="flex lg:gap-14 gap-4  items-center justify-center py-[10px] min-h-full">
+                        <li class="text-lg font2 font-medium text-[#030712b3]"><button>Home</button></li>
+                        <li class="text-lg font2 font-medium text-[#030712b3]"><button>About</button></li>
+                        <li class="text-lg font2 font-medium text-[#030712b3]"><button>Destination</button></li>
+                        <li class="text-lg font2 font-medium text-[#030712b3]"><button>Search</button></li>
+                    </ul>
+                </div>
+                <div class="mx-auto md:mx-0">
+                    <button class="flex items-center font-bold text-xl text-[#1DD100] border-[#1dd10066] border-[1px] bg-[#1dd1001a] px-[30px] py-[16px] rounded-xl">Bus<span class="inline-block pl-[10px] my-auto"><img src="images/bus-icon.png" class="block w-6 h-6"></span></button>
+                </div>
+            </div>
+        </section>
+        <!--banner-->
+        <section class="container mx-auto bg-cover bg-no-repeat bg-center h-[700px] mb-[190px] rounded-[32px] relative" style="background-image: url(images/banner.png);">
+            <div class="">
+                <!-- Main banner -->
+                <div class="text-center md:pt-[70px] pt-[30px]">
+                    <h1 class="text-[#FFF] font-extrabold md:leading-[86px] leading-[50px] md:text-[64px] text-[30px] font2 text-center">End-to-End Travel with <br><span class="text-[#1DD100]">P Paribahan</span></h1>
+                    <p class="pt-[16px] font1 text-[#FFF] text-lg text-center font-normal md:pb-[32px] pb-[20px] leading-[20px] md:leading-[30px]">Yes, you can run unit tests and view the results directly within the app. The integrated<br> testing features allow for a streamlined .</p>
+                    <button id="buy_tickets" class="mx-auto bg-[#1DD100] px-[30px] py-[21px] text-[#030712] font2 font-bold text-xl rounded-xl mb-5">Buy Tickets</button>
+                </div>
+            </div>
+            <!--header sticker section-->
+            <div class="absolute transform md:translate-y-48 w-full translate-y-1">
+                <div class="flex gap-6 justify-center md:flex-row flex-col items-center">
+                    <div class="bg-white flex gap-4 md:py-[32px] py-[20px] pl-[32px] md:pr-[53px] pr-[20px] rounded-3xl border-b-[3px] border-[#1DD100]">
+                        <div>
+                            <img src="images/people.png" alt=""></div>
+                        <div>
+                            <h2 class="text-[#030712] font-bold text-4xl font1">500K+</h2>
+                            <p class="text-[#03071299] font1 text-xl font-normal">Registered users</p>
+                        </div>
+                    </div>
+                
+                
+                    <div class="bg-white flex gap-4 md:py-[32px] py-[20px] pl-[32px] md:pr-[53px] pr-[20px] rounded-3xl border-b-[3px] border-[#1DD100]">
+                        <div>
+                            <img src="images/ticket-cupon.png" alt=""></div>
+                        <div>
+                            <h2 class="text-[#030712] font-bold text-4xl font1">1.7 lacks</h2>
+                            <p class="text-[#03071299] font1 text-xl font-normal">Tickets sold</p>
+                        </div>
+                    </div>
+                
+                
+                    <div class="bg-white flex gap-4 md:py-[32px] py-[20px] pl-[32px] md:pr-[53px] pr-[20px]  rounded-3xl border-b-[3px] border-[#1DD100]">
+                        <div>
+                            <img src="images/stoppage.png" alt=""></div>
+                        <div>
+                            <h2 class="text-[#030712] font-bold text-4xl font1">80K+</h2>
+                            <p class="text-[#03071299] font1 text-xl font-normal">Rental partners</p>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        </section>
+    </header>
+
+    <!--main content here-->
+    <main>
+        <!--ticket offers-->
+        <section class="container mx-auto">
+            <h2 class="text-[#030712] text-center text-[40px] font-bold font2 mb-[48px]">Best offers for you</h2>
+            <div class="mb-[62px] flex gap-6 justify-center">
+                <div class="flex ticket w-[573px] h-[220px] bg-[#FFBF0F] relative items-center justify-between rounded-3xl">
+                    <div class="left w-[342px] h-full relative flex flex-col items-center justify-center font1">
+                        <h1>
+                            <span class="text-[#030712e5] font-extrabold text-[40px] leading-9">15% OFF</span><br>
+                            <span class="text-[#030712e5] font-semibold text-xl leading-9">on your next purchase</span><br>
+                            <span class="text-[#03071280] text-lg leading-9 font-medium">use by January 2024</span>
+                        </h1>
+                    </div>
+                    <div class="right-yellow w-[231px] h-full flex items-center justify-center font2">
+                        <h1 class="text-center">
+                            <span class="text-[#030712e5] text-[32px] font-bold leading-[40px]">NEW15</span><br>
+                            <span class="text-[#03071280] text-xl font-medium leading-[40px]">Coupon Code</span>
+                        </h1>
+                    </div>
+
+                    <div class="circles">
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                    </div>
+                </div>
+                <div class="flex ticket w-[573px] h-[220px] bg-[#F78C9C] relative items-center justify-between rounded-3xl">
+                    <div class="left w-[342px] h-full relative flex flex-col items-center justify-center font1">
+                        <h1>
+                            <span class="text-[#030712e5] font-extrabold text-[40px] leading-9">20% OFF</span><br>
+                            <span class="text-[#030712e5]">on your next purchase</span><br>
+                            <span class="text-[#03071280]">use by January 2024</span>
+                        </h1>
+                    </div>
+                    <div class="right-pink w-[231px] h-full flex items-center justify-center font2">
+                        <h1 class="text-center">
+                            <span class="text-[#030712e5] text-[32px] font-bold leading-[40px]">Couple 20</span><br>
+                            <span class="text-[#03071280] text-xl font-medium leading-[40px]">Coupon Code</span>
+                        </h1>
+                    </div>
+
+                    <div class="circles">
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mb-[120px]">
+                <button class="inline-block text-[#1DD100] border-[#1DD100] border-[1px] px-[30px] py-[21px] text-xl font2 font-bold rounded-xl">See All Offers</button>
+            </div>
+        </section>
+    </main>
+
+    <!--footer-->
+    <footer class="bg-[#030712]">
+        <div class="container mx-auto py-[120px]">
+            <!--footer first part-->
+           <div class="flex flex-col md:flex-row  justify-between ">
+                <div class="px-5 pb-4 md:p-0">
+                    <h2 class="text-[#FFF] text-4xl font-extrabold font2">P-Ticket</h2>
+                    <p class="text-[#ffffffcc] font1 text-[18px] font-normal leading-8 pt-[16px]">P-Ticket is a digital platform to make your<br> daily commuting better.</p>
+                </div>
+                <div class="pb-[67px] mx-auto md:mx-0">
+                    <p class="text-[#FFF] text-xl font-semibold text-center md:text-right pb-[20px] font2">Download our app</p>
+                    <img src="images/playstore.png" alt="">
+                </div>
+           </div>
+        
+           <hr class="border-dashed border-[#ffffff4d] pb-[32px]">
+
+           <!--footer second part-->
+           <div class="flex flex-col md:flex-row justify-between">
+            <div class="flex-1 pb-5 md:p-0">
+                <p class="text-[#ffffffb3] text-lg font-normal font1 text-center md:text-left">@all rights reserved, P-Ticket services limited.2024</p>
+            </div>
+            <div class="flex-1">
+                <ul class="grid md:grid-flow-col grid-flow-row gap-10 font1 md:justify-end justify-center">
+                    <li class="text-[#FFF] text-lg font-medium">Terms & condition</li>
+                    <li class="text-[#FFF] text-lg font-medium">Return & refund policy</li>
+                    <li class="text-[#FFF] text-lg font-medium">Privacy policy</li>
+                </ul>
+            </div>
+           </div>
+        </div>
+    </footer>
 </body>
 </html>
