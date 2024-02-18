@@ -50,7 +50,46 @@
            justify-content: space-between;
            flex-direction: column;
         }
+        .circle1{
+            width : 80px;
+            height: 80px;
+            border-radius: 50%;
+            background: #F7F8F8;
+        }
+        .circles1{
+           position: absolute; 
+           width: fit-content;
+           height: 460px;     
+           top: 50%;
+           transform: translate(0, -50%);
+           right: 22.3%;
+           display: flex;
+           align-items: center;
+           justify-content: space-between;
+           flex-direction: column;
+        }
+        .right{
+            background-image: linear-gradient(rgb(255, 255, 255) 45%, rgba(29, 209, 0, 1) 0%);
+            background-position: left;
+            background-size: 2px 15px;
+            background-repeat: repeat-y;
+            position: relative;
+        }
+        .divider{
+            background-image: linear-gradient(rgb(255, 255, 255) 45%, rgba(11, 17, 10, 0.568) 0%);
+            background-position: left;
+            background-size: 2px 15px;
+            background-repeat: repeat-y;
+            position: relative;
+        }
+        .t1 ul li{
+            color: #03071299;
+            font-weight: 400;
+            font-size: 20px;
+            padding-bottom: 16px;
+        }
     </style>
+
 </head>
 <body>
     <header>
@@ -77,12 +116,12 @@
                 <!-- Main banner -->
                 <div class="text-center md:pt-[70px] pt-[30px]">
                     <h1 class="text-[#FFF] font-extrabold md:leading-[86px] leading-[50px] md:text-[64px] text-[30px] font2 text-center">End-to-End Travel with <br><span class="text-[#1DD100]">P Paribahan</span></h1>
-                    <p class="pt-[16px] font1 text-[#FFF] text-lg text-center font-normal md:pb-[32px] pb-[20px] leading-[20px] md:leading-[30px]">Yes, you can run unit tests and view the results directly within the app. The integrated<br> testing features allow for a streamlined .</p>
-                    <button id="buy_tickets" class="mx-auto bg-[#1DD100] px-[30px] py-[21px] text-[#030712] font2 font-bold text-xl rounded-xl mb-5">Buy Tickets</button>
+                    <p class="pt-[16px] font1 text-[#FFF] text-lg text-center font-normal md:pb-[40px] pb-[20px] leading-[20px] md:leading-[30px]">Yes, you can run unit tests and view the results directly within the app. The integrated<br> testing features allow for a streamlined .</p>
+                    <a href="#main_ticket" class="mx-auto bg-[#1DD100] px-[30px] py-[21px] text-[#030712] font2 font-bold text-xl rounded-xl mb-8">Buy Tickets</a>
                 </div>
             </div>
             <!--header sticker section-->
-            <div class="absolute transform md:translate-y-48 w-full translate-y-1">
+            <div class="absolute transform md:translate-y-64 w-full translate-y-1">
                 <div class="flex gap-6 justify-center md:flex-row flex-col items-center">
                     <div class="bg-white flex gap-4 md:py-[32px] py-[20px] pl-[32px] md:pr-[53px] pr-[20px] rounded-3xl border-b-[3px] border-[#1DD100]">
                         <div>
@@ -167,6 +206,232 @@
             <div class="text-center mb-[120px]">
                 <button class="inline-block text-[#1DD100] border-[#1DD100] border-[1px] px-[30px] py-[21px] text-xl font2 font-bold rounded-xl">See All Offers</button>
             </div>
+        </section>
+
+        <!--main ticket section-->
+
+        <section id="main_ticket" class="bg-[#F7F8F8] border-t-[#1DD100] border-t-[2px] rounded-t-[88px] pb-[120px]">
+            <div class="container mx-auto pt-[120px]">
+                <div class="flex flex-col justify-center items-center">
+                    <h1 class="font-bold text-[40px] font2 text-[#030712] pb-[24px]">Sunshine Transit</h1>
+                    <p class="text-[rgba(3,7,18,0.60)] font1 text-xl font-normal leading-8 text-center max-w-[70%] pb-[50px]">Embark on an unforgettable journey with our travel service, where every mile is a new adventure waiting to be discovered. Experience seamless planning, unparalleled comfort, and authentic cultural encounters as you explore the world with us.</p>
+                </div>
+                <div class="container mx-auto pb-[28px]">
+                    <div class="flex ticket w-full h-[418px] bg-[#FFF] relative items-center justify-between rounded-3xl">
+                        <div class="left w-[75%] px] h-full relative flex flex-col font1">
+                            <div class="p-[30px]">
+                                <div class="flex justify-between mb-[22px]">
+                                    <div class="flex gap-4">
+                                        <img src="images/bus-logo.png" alt="" class="h-auto w-auto">
+                                        <div>
+                                            <h2 class="text-[#030712] font-bold text-[32px]">Sunshine Transit</h2>
+                                            <p class="text-[rgba(3, 7, 18, 0.60)] font-normal text-lg">Coach-009-WEB ! AC_Business</p>
+                                        </div>
+                                    </div>
+                                    <div class='pr-[30px]'>
+                                        <button type="button" class="text-[#1DD100] font-medium text-lg font1 bg-[#1DD10026] rounded-xl p-[17px]"><img src="images/seat-green.png" alt="" class="inline"><span class="pl-[8px]">40</span> Seats left</button>
+                                    </div>
+                                </div>
+                                <div class="mr-[30px] p-[28px] bg-[#F7F8F8] rounded-3xl">
+                                    <div class="flex justify-between">
+                                        <p class="text-[#03071299] text-lg font2 font-semibold">Route</p>
+                                        <p class="text-[#030712] text-lg font-semibold font2">Dhaka - Sylhet</p>
+                                    </div>
+                                    <hr class="border-dashed border-[1px] my-[22px]">
+                                    <div class="flex justify-between">
+                                        <p class="text-[#03071299] text-lg font2 font-semibold">Departure Time</p>
+                                        <p class="text-[#030712] text-lg font-semibold font2">9:00 PM</p>
+                                    </div>
+                                    <hr class="border-dashed border-[1px] my-[22px]">
+                                    <div class="flex justify-between">
+                                        <p class="text-[#030712CC] text-base font-medium bg-[#0307120D] py-[19px] rounded-xl px-[18px]">Boarding Point - Laxmipur</p>
+                                        <p class="text-[#030712CC] text-base font-medium bg-[#0307120D] py-[19px] rounded-xl px-[24px]">Dropping Point - Bogura</p>
+                                        <p class="text-[#030712CC] text-base font-medium bg-[#0307120D] py-[19px] rounded-xl px-[44px]">Est. Time - 11 Hour</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="right w-[25%] h-full flex items-center justify-center font2 flex-col">
+                            <img src="images/fare.png" alt="" class="mb-[24px]">
+                            <h3 class="text-[#030712] font-bold text-4xl leading-10">550 Taka</h3>
+                            <p class="text-[3,7,18,0.60] font-semibold text-2xl leading-10">Per Seat</p>
+                        </div>
+    
+                        <div class="circles1">
+                            <div class="circle1"></div>
+                            <div class="circle1"></div>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+            <!--seats section-->
+            <div class="container mx-auto">
+                    <div class="p-[32px] bg-[#FFF] rounded-3xl flex gap-[60px]">
+                        <div class="w-[65%]">
+                            <div>
+                                <p class="text-[#030712] font2 text-2xl font-semibold pb-[24px]">Select Your Seat</p>
+                                <hr class="border-dashed mb-[19px]">
+                            </div>
+
+                            <div class="flex justify-between">
+                                <div class="flex gap-2"> 
+                                    <img src="images/seat-gray.png" alt="">
+                                    <p class="text-[#03071280] font1 text-xl font-medium gap-2">Available</p>
+                                </div>
+                                <div class="flex gap-2">
+                                    <img src="images/seat-green-filled.png" alt="">
+                                    <p class="text-[#1DD100] font1 text-xl font-medium">selected</p>
+                                </div>
+                            </div>
+
+                            <hr class="mt-[19px] border-dashed mb-[24px]">
+                            <div class="flex justify-end">
+                                <p class="bg-[#0307121A] inline-block px-[39px] py-[12px] rounded-xl"><img src="images/wheel.svg" alt="" class="inline-block"></p>
+                            </div>
+                            <!--seats-->
+                            <div class="grid grid-cols-10 mt-[24px]">
+                                <div class="col-span-1 font1">
+                                    <ul class="w-[110px] space-y-6">
+                                        <li class="text-lg font-medium text-center px-10 py-[18px]">A</li>
+                                        <li class="text-lg font-medium text-center px-10 py-[18px]">B</li>
+                                        <li class="text-lg font-medium text-center px-10 py-[18px]">C</li>
+                                        <li class="text-lg font-medium text-center px-10 py-[18px]">D</li>
+                                        <li class="text-lg font-medium text-center px-10 py-[18px]">E</li>
+                                        <li class="text-lg font-medium text-center px-10 py-[18px]">F</li>
+                                        <li class="text-lg font-medium text-center px-10 py-[18px]">G</li>
+                                        <li class="text-lg font-medium text-center px-10 py-[18px]">H</li>
+                                        <li class="text-lg font-medium text-center px-10 py-[18px]">I</li>
+                                        <li class="text-lg font-medium text-center px-10 py-[18px]">J</li>
+                                    </ul>
+                                </div>
+                                <div class="col-span-2 text-center flex justify-start">
+                                    <ul class="w-[110px] space-y-6">
+                                        <li class="bg-[#F7F8F8] text-lg font-medium px-10 py-[18px] rounded-xl">A1</li>
+                                        <li class="bg-[#F7F8F8] text-lg font-medium px-10 py-[18px] rounded-xl">B1</li>
+                                        <li class="bg-[#F7F8F8] text-lg font-medium px-10 py-[18px] rounded-xl">C1</li>
+                                        <li class="bg-[#F7F8F8] text-lg font-medium px-10 py-[18px] rounded-xl">D1</li>
+                                        <li class="bg-[#F7F8F8] text-lg font-medium px-10 py-[18px] rounded-xl">E1</li>
+                                        <li class="bg-[#F7F8F8] text-lg font-medium px-10 py-[18px] rounded-xl">F1</li>
+                                        <li class="bg-[#F7F8F8] text-lg font-medium px-10 py-[18px] rounded-xl">G1</li>
+                                        <li class="bg-[#F7F8F8] text-lg font-medium px-10 py-[18px] rounded-xl">H1</li>
+                                        <li class="bg-[#F7F8F8] text-lg font-medium px-10 py-[18px] rounded-xl">I1</li>
+                                        <li class="bg-[#F7F8F8] text-lg font-medium px-10 py-[18px] rounded-xl">J1</li>
+                                    </ul>
+                                </div>
+                                <div class="col-span-2 flex justify-start">
+                                    <ul class="w-[110px] space-y-6">
+                                        <li class="bg-[#F7F8F8] text-lg font-medium  px-10 py-[18px] rounded-xl">A2</li>
+                                        <li class="bg-[#F7F8F8] text-lg font-medium  px-10 py-[18px] rounded-xl">B2</li>
+                                        <li class="bg-[#F7F8F8] text-lg font-medium  px-10 py-[18px] rounded-xl">C2</li>
+                                        <li class="bg-[#F7F8F8] text-lg font-medium  px-10 py-[18px] rounded-xl">D2</li>
+                                        <li class="bg-[#F7F8F8] text-lg font-medium  px-10 py-[18px] rounded-xl">E2</li>
+                                        <li class="bg-[#F7F8F8] text-lg font-medium  px-10 py-[18px] rounded-xl">F2</li>
+                                        <li class="bg-[#F7F8F8] text-lg font-medium  px-10 py-[18px] rounded-xl">G2</li>
+                                        <li class="bg-[#F7F8F8] text-lg font-medium  px-10 py-[18px] rounded-xl">H2</li>
+                                        <li class="bg-[#F7F8F8] text-lg font-medium  px-10 py-[18px] rounded-xl">I2</li>
+                                        <li class="bg-[#F7F8F8] text-lg font-medium  px-10 py-[18px] rounded-xl">J2</li>
+                                    </ul>
+                                </div>
+                                <div class="col-span-1"></div>
+                                <div class="col-span-2 flex justify-end">
+                                    <ul class="w-[110px] space-y-6">
+                                        <li class="bg-[#F7F8F8] text-lg font-medium  px-10 py-[18px] rounded-xl">A3</li>
+                                        <li class="bg-[#F7F8F8] text-lg font-medium  px-10 py-[18px] rounded-xl">B3</li>
+                                        <li class="bg-[#F7F8F8] text-lg font-medium  px-10 py-[18px] rounded-xl">C3</li>
+                                        <li class="bg-[#F7F8F8] text-lg font-medium  px-10 py-[18px] rounded-xl">D3</li>
+                                        <li class="bg-[#F7F8F8] text-lg font-medium  px-10 py-[18px] rounded-xl">E3</li>
+                                        <li class="bg-[#F7F8F8] text-lg font-medium  px-10 py-[18px] rounded-xl">F3</li>
+                                        <li class="bg-[#F7F8F8] text-lg font-medium  px-10 py-[18px] rounded-xl">G3</li>
+                                        <li class="bg-[#F7F8F8] text-lg font-medium  px-10 py-[18px] rounded-xl">H3</li>
+                                        <li class="bg-[#F7F8F8] text-lg font-medium  px-10 py-[18px] rounded-xl">I3</li>
+                                        <li class="bg-[#F7F8F8] text-lg font-medium  px-10 py-[18px] rounded-xl">J3</li>
+                                    </ul>
+                                </div>
+                                <div class="col-span-2 flex justify-end">
+                                    <ul class="w-[110px] space-y-6">
+                                        <li class="bg-[#F7F8F8] text-lg font-medium  px-10 py-[18px] rounded-xl">A4</li>
+                                        <li class="bg-[#F7F8F8] text-lg font-medium  px-10 py-[18px] rounded-xl">B4</li>
+                                        <li class="bg-[#F7F8F8] text-lg font-medium  px-10 py-[18px] rounded-xl">C4</li>
+                                        <li class="bg-[#F7F8F8] text-lg font-medium  px-10 py-[18px] rounded-xl">D4</li>
+                                        <li class="bg-[#F7F8F8] text-lg font-medium  px-10 py-[18px] rounded-xl">E4</li>
+                                        <li class="bg-[#F7F8F8] text-lg font-medium  px-10 py-[18px] rounded-xl">F4</li>
+                                        <li class="bg-[#F7F8F8] text-lg font-medium  px-10 py-[18px] rounded-xl">G4</li>
+                                        <li class="bg-[#F7F8F8] text-lg font-medium  px-10 py-[18px] rounded-xl">H4</li>
+                                        <li class="bg-[#F7F8F8] text-lg font-medium  px-10 py-[18px] rounded-xl">I4</li>
+                                        <li class="bg-[#F7F8F8] text-lg font-medium  px-10 py-[18px] rounded-xl">J4</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+        
+                        
+        
+                        <div class="w-[35%] divider h-auto inline py-0 my-0">
+                            <div class="ml-[25px] pt-0 mt-0"> 
+                                <p class="text-[#030712] font2 text-2xl font-semibold pb-[24px]">Select Your Seat</p>
+                                <hr class="border-dashed my-[24px]">
+                            </div>
+
+                            <div class="bg-[#F7F8F8] rounded-xl p-[32px] ml-[25px]">
+                                <div class="flex justify-between">
+                                    <p class="text-[#030712] font1 text-lg font-medium">Seat <span class="text-[#FFF] text-base font-bold bg-[#1DD100] px-2 rounded-full">0</span></p>
+                                    <p class="text-[#030712] font1 text-lg font-medium">
+                                        Class
+                                    </p>
+                                    <p class="text-[#030712] font1 text-lg font-medium">Price</p>
+                                </div>
+                                <hr class="my-[16px] border-dashed">
+                                <div class="flex justify-between">
+                                    <div class="t1">
+                                        <ul class="">
+                                        
+                                        </ul>
+                                    </div>
+                                    <div class="t1">
+                                        <ul class="">
+                                        
+                                        </ul>
+                                    </div>
+                                    <div  class="t1">
+                                        <ul class=""></ul>
+                                    </div>
+                                </div>
+                                <hr class="my-[16px]">
+                                <div class="flex justify-between mb-[16px]">
+                                    <p class="text-[#030712] font1 text-lg font-medium">Total Price</p>
+                                    <p class="text-[#030712] font1 text-lg font-medium"></p>
+                                </div>
+                                <div class="flex justify-between mb-[16px]">
+                                    <p class="text-[#030712] font1 text-lg font-medium"></p>
+                                    <p class="text-[#030712] font1 text-lg font-medium"></p>
+                                </div>
+                                <div class="relative inline-flex w-[100%] mb-[24px]">
+                                    <input type="text" placeholder="Have any copupon?" class="bg-white rounded-xl w-[100%] p-[20px]">
+                                    <button type="button" class="btn bg-[#1DD100] ml-[-20%] text-[#FFF] h-full my-auto cursor-not-allowed" disabled>Apply</button>
+                                </div>
+                                <div class="flex justify-between mb-[16px]">
+                                    <p class="text-[#030712] font1 text-lg font-medium">Grand Total</p>
+                                    <p class="text-[#030712] font1 text-lg font-medium"></p>
+                                </div>
+                            </div>
+                            <div class="w-full">
+                                <form class="w-full pl-[25px]">
+                                    <label for="name">Passenger Name*</label><br>
+                                    <input type="text" id="name" name="name" class="w-full" placeholder="Enter your name" required><br>
+                                    <label for="Number">Phone Number*</label><br>
+                                    <input type="number" id="lname" name="number" placeholder="Enter your phone number" class="w-full"><br>
+                                    <label for="email">Email ID</label><br>
+                                    <input type="email" name="email" id="email" placeholder="Enter your email id" class="w-full"><br>
+                                    <input type="submit" value="Next" disabled class="w-full bg-[#1DD100] text-white">
+                                  </form> 
+                            </div>
+                        </div>
+                    </div>
+            </div>
+
+            
         </section>
     </main>
 
