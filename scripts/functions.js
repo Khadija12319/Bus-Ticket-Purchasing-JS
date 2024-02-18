@@ -1,5 +1,6 @@
 const inputElement = document.getElementById('phone');
 const buttonElement = document.getElementById('buy-btn');
+//console.log(buttonElement);
 
 function numberVarify(){
     inputElement.addEventListener('input', function(event){
@@ -17,3 +18,4 @@ function numberVarify(){
         const length = inputValue.length;
         return length;
     }
+

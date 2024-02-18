@@ -93,8 +93,7 @@ for(const element of seatsElements){
             })
             
         }
-        numberVarify();
-        
+        numberVarify();  
         event.target.disabled = true;
     }
  })}
