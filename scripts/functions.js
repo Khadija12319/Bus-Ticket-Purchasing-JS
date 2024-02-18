@@ -1,21 +1,19 @@
-//hide element function 
-function hideElementById(elementId){
-    const element = document.getElementById(elementId);
-    element.classList.add('hidden');
-}
-//show element function
-function showElementById(elementId){
-    const element = document.getElementById(elementId);
-    element.classList.remove('hidden');
-}
-//background add
-function addHighlighter(){
-    document.getElementById(elementId).classList.add('bg-[#1DD100]');
-    document.getElementById(elementId).classList.add('text-[#FFF]');
+const inputElement = document.getElementById('phone');
+const buttonElement = document.getElementById('buy-btn');
 
-}
-//background remove
-function removeHighlighter(elementId){
-    document.getElementById(elementId).classList.remove('bg-[#1DD100]');
-    document.getElementById(elementId).classList.remove('text-[#FFF]');
-}
+function numberVarify(){
+    inputElement.addEventListener('input', function(event){
+        const length= isValidPhoneNumber();
+        if(length>3){
+            buttonElement.disabled= false;
+        }    
+        else{
+            buttonElement.disabled= true;
+        } 
+    })}
+
+    function isValidPhoneNumber(){
+        const inputValue = inputElement.value;
+        const length = inputValue.length;
+        return length;
+    }

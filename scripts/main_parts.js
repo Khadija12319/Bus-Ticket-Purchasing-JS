@@ -76,6 +76,7 @@ for(const element of seatsElements){
                     document.getElementById('discount-price').innerText= discount;
                     document.getElementById('input-button-section').classList.add('hidden');
                     document.getElementById('grand-total').innerText=grandtotal;
+                    numberVarify();
                 }
                 else if(inputValue === couponTwo){
                     discount = totalPrice * 0.2;
@@ -84,18 +85,16 @@ for(const element of seatsElements){
                     document.getElementById('discount-price').innerText= discount;
                     document.getElementById('input-button-section').classList.add('hidden');
                     document.getElementById('grand-total').innerText=grandtotal;
+                    numberVarify();
                 }
                 else{
                     alert("please give the correct coupon code");
                 }
             })
-
             
         }
+        numberVarify();
         
         event.target.disabled = true;
     }
-
-
-   //console.log(background);
  })}
